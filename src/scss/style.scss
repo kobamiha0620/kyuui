@@ -405,11 +405,99 @@
     }
   }
 
+  &__notice{
+    margin: 0 0 10px;
+    &--date{
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+    &-notewrap{
+      margin: 0 0 30px;
+    }
+    &--time{
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0 0 0 0;
+      &-w{
+        margin: 10px 0 0;
+      }
+    }
+    li{
+      display: inline-block;
+      min-width: 60%;
+      border: solid 1px #999;
+      padding: 20px;
+      margin: 0 0 15px 0;
+      background: #FFF;
+      &:last-child{
+      }
+    }
+    &--wrap{
+      margin: 0 0 40px;
+    }
+    &--note{
+      font-size: 12px;
+      text-indent: -1em;
+      padding-left: 1em;
+      margin: 0 0 5px;
+      line-height: 1.4;
+    }
+    &--map{
+      font-size: 14px;
+      font-weight: bold;
+      a{
+        border-bottom: solid 1px $BASE;
+        text-decoration: none;
+        color: #444;
+        font-weight: normal;
+      }
+      br{
+        display: none;
+      }
+    }
+    &--menu{
+      margin: 40px 0;
+      border-bottom: dotted 1px $BASE;
+      padding: 0 0 40px;
+      &-ttl{
+        margin: 0 0 10px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      &-txt{
+        line-height: 1.5;
+        font-size: 14px;
+        display: flex;
+        max-width: 50%;
+        justify-content: space-between;
+      }
+      &-note{
+        font-size: 12px;
+        line-height: 1.4;
+        text-indent: -1em;
+        padding-left: 1em;
+        margin: 15px 0 0;
+      }
 
+    }
+  }
   &__bclass{
     background: rgba(255, 255,255, 0.7);
     padding: 30px 40px 40px;
     margin: -60px auto 80px;
+    &--subttl{
+      font-size: 14px;
+      line-height: 1.8;
+      margin: 20px 0;
+      &-x{
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0 0 5px;
+      }
+    }
+
     &--ttl{
       color: #622728;
       border-bottom: solid 1px #622728;
@@ -448,6 +536,7 @@
         &::before{
           content: "：";
         }
+
       }
       &-txt2{
         border: solid 1px #999;
@@ -478,6 +567,15 @@
         text-indent: -1em;
         padding-left: 1em;
         margin: 0 0 6px;
+        a{
+          text-decoration: none;
+          color: #444;
+          display: block;
+          &:visited{
+            color: #444;
+
+          }
+        }
       }
       
     }
@@ -781,9 +879,80 @@
         }
       }
     }
+    &__notice{
+      margin: 0 0;
+      &--date{
+        font-size: 12px;
+        line-height: 1.5;
+      }
+      &-notewrap{
+        margin: 0 0 20px;
+      }
+      &--time{
+        font-size: 11px;
+        line-height: 1.5;
+        margin: 0 0 0 0;
+        text-indent: -4em;
+        padding-left: 4em;
+        &-w{
+          margin: 10px 0 0;
+        }
+      }
+      li{
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin: 0 0 15px 0;
+
+      }
+      &--wrap{
+        margin: 0 0 40px;
+      }
+      &--note{
+        font-size: 10px;
+        line-height: 1.4;
+        margin: 0 0 5px;
+      }
+      &--map{
+        font-size: 12px;
+        line-height: 1.5;
+        a{
+          display: inline-block;
+        }
+        br{
+          display: block;
+        }
+      }
+      &--menu{
+        margin: 25px 0;
+        &-ttl{
+          margin: 0 0 5px;
+          font-size: 12px;
+        }
+        &-txt{
+          line-height: 1.5;
+          font-size: 12px;
+          max-width: 100%;
+        }
+        &-note{
+          font-size: 10px;
+          line-height: 1.4;
+          text-indent: -1em;
+          padding-left: 1em;
+          margin: 15px 0 0;
+        }
+      }
+    }
     &__bclass{
       padding: 20px 20px 20px;
       margin: -40px 5% 80px;
+      &--subttl{
+        font-size: 12px;
+        line-height: 1.4;
+        &-x{
+          font-size: 12px;
+        }
+      }
       &--ttl{
         font-size: 16px;
         margin-bottom: 10px;
@@ -837,6 +1006,10 @@
         
       }
     }
+  }
+  .contents__bclass--ttl{
+    line-height: 1.4;
+    padding-bottom: 10px;
   }
 }
 
