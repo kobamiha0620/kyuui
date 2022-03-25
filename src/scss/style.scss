@@ -59,7 +59,15 @@
         }
       }
     }
-
+    &--youtube {
+      background: url(../img/icon_youtube.png) no-repeat;
+      background-size: 100% auto;
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      text-indent: -9999px;
+      white-space: nowrap;
+    }
     &--insta {
       background: url(../img/icon_insta.png) no-repeat;
       background-size: 100% auto;
@@ -345,6 +353,15 @@
         }
       }
 
+    }
+    &--youtube {
+      background: url(../img/icon_youtube.png) no-repeat;
+      background-size: 100% auto;
+      display: inline-block;
+      width: 44px;
+      height: 44px;
+      text-indent: -9999px;
+      white-space: nowrap;
     }
     &--insta {
       background: url(../img/icon_insta.png) no-repeat;
@@ -640,7 +657,10 @@
           margin-left: 0;
         }
       }
-
+      &--youtube {
+        width: 26px;
+        height: 26px;
+      }
       &--insta {
         width: 26px;
         height: 26px;
@@ -849,6 +869,11 @@
         }
 
       }
+      &--youtube {
+        width: 26px;
+        height: 26px;
+      }
+  
       &--insta {
         width: 26px;
         height: 26px;
